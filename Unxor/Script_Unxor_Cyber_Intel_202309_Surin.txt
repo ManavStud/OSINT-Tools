@@ -1,0 +1,35 @@
+Clonethe git repository using: git clone https://github.com/tomchop/unxor.git
+
+Using Golang:
+
+$ go get github.com/tomchop/unxor
+$ $GOBIN/unxor -h
+Usage of /Users/tomchop/code/go/bin/unxor:
+-f string
+        Filename to decrypt
+-g string
+        Known plaintext (string)
+-gh string
+        Known plaintext (hex encoded)
+
+
+Using Docker:
+
+$ docker pull tomchop/unxor
+$ docker run --rm -v $PWD:/data tomchop/unxor -h
+Usage of /go/bin/unxor:
+-f string
+        Filename to decrypt
+-g string
+        Known plaintext (string)
+-gh string
+        Known plaintext (hex encoded)
+
+Using Python:
+
+$ cd pyunxor
+$ python unxor.py
+usage: unxor.py [-h] (-g GUESS | -k KEY) [-m {iterative,selective}] [-x]
+                [-v {0,1,2}]
+                [infile] [outfile]
+unxor.py: error: one of the arguments -g/--guess -k/--key is required
