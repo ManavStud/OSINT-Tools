@@ -1,0 +1,5 @@
+https://github.com/michenriksen/gitrob/releases/tag/v2.0.0-beta
+Download zip
+unzip gitrob_linux_amd64_2.0.0-beta.zip
+Add Access token in bashrc
+run gitrob (./gitrob)
